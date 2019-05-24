@@ -1,0 +1,38 @@
+header, footer p, .logo-foot {
+	position: absolute;
+}
+
+header {
+	width: 100%;
+}
+
+
+#switch-color a {
+	color: #fff;
+}
+
+#switch-color .btn-menu {
+	color: #fff;
+}
+
+#switch-logo-1 {
+	display: block;
+}
+
+#switch-logo-2 {
+	display: none;
+}
+
+footer {
+	color: #fff;
+}
+
+footer p {
+	bottom: 10px;
+	left: 50px;
+}
+
+.logo-foot {
+	bottom: 10px;
+	right: 10px;
+}

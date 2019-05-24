@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../static/style.css">
+	<link rel="stylesheet" type="text/css" href="../../static/clip.css">
+
+	<link rel="canonical" href="https://codepen.io/abinthaha/pen/RyjLKa">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <style class="cp-pen-styles"></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+{% extends 'polls/header_and_footer.html' %}
+
+
+{% block content %}
+<div>
+	<h1 class="headline">МЫ ПРЕДЛАГАЕМ</h1>
+	<div>
+		<div class="sentence">
+			<!-- <div class=""> -->
+				<a href="#">
+					<div class="icon centr" id="icon-1"></div>
+					<div class="disc-icon">ВИДЕОПРЕЗИНТАЦИИ</div>
+					
+				</a>
+
+				<a href="#">
+					<div class="icon centr" id="icon-2"></div>
+					<div class="disc-icon">ИНФОГРАФИКА</div>
+					
+				</a>
+
+				<a href="#">
+					<div class="icon centr" id="icon-3"></div>
+					<div class="disc-icon">ВИРУСНЫЕ РОЛИКИ</div>
+					
+				</a>
+
+				<a href="#">
+					<div class="icon centr" id="icon-4"></div>
+					<div class="disc-icon">ПРОДАЮЩИЕ РОЛИКИ</div>
+					
+				</a>
+
+				<a href="#">
+					<div class="icon centr" id="icon-5"></div>
+					<div class="disc-icon">3D ГРАФИКА</div>
+					
+				</a>
+
+			<!-- </div> -->
+		</div>
+
+	</div>
+	<div class="buy">
+		<button class="btn btn-primary">Заказать</button>
+	</div>
+
+</div>
+<div>
+	<h1 class="headline">НАШЕ ПОРТФОЛИО</h1>
+	<div class="buy">
+		<button class="btn btn-primary">ХОЧУ ЕЩЕ!</button>
+	</div>
+</div>
+ <h1 class="headline">ТАРИФЫ</h1>
+    <div class="row">
+      <div class="tarif" id="infographics">
+        <div class="headline">
+          <h4>ИНФОГРАФИКА</h4>
+        </div>
+        <div class="price">40 000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+              <li class="plan__li">30 секунд</li>
+              <li class="plan__li">Разработка  сценария</li>
+              <li class="plan__li">Написание текста</li>
+              <li class="plan__li">Дикторское озвучание</li>
+              <li class="plan__li">Графический дизайн</li>
+              <li class="plan__li">Создание инфографики</li>
+              <li class="plan__li">Видеомонтаж</li>
+              <li class="plan__li">Звуковое оформление</li>
+              <li class="plan__li">Музыкальный фон</li>
+              <li class="plan__li"><p><b>БЕСПЛАТНЫЕ ПРАВКИ</b></p></li>
+          </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+      <div class="tarif" id="Pers-Anim">
+        <div class="headline">
+          <h4>ПЕРСОНАЖНАЯ АНИМАЦИЯ</h4>
+        </div>
+        <div class="price">50 000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+            <li class="plan__li">30 секунд</li>
+            <li class="plan__li">Создание персонажей</li>
+            <li class="plan__li">Разработка сценария</li>
+            <li class="plan__li">Написание текста</li>
+            <li class="plan__li">Дикторское озвучание</li>
+            <li class="plan__li">Графический дизайн</li>
+            <li class="plan__li">Видеомонтаж</li>
+            <li class="plan__li">Звуковое оформление</li>
+            <li class="plan__li">Использование персонажей</li>
+            <li class="plan__li">Музыкальный фон</li>
+            <li class="plan__li"><p><strong>БЕСПЛАТНЫЕ ПРАВКИ</strong></p></li>
+          </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+      <div class="tarif" id="Virs-Clip">
+        <div class="headline">
+          <h4>ВИРУСНЫЙ РОЛИК</h4>
+        </div>
+        <div class="price">ОТ 2000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+            <li class="plan__li">1 секунда</li>
+            <li class="plan__li">Сценарная группа</li>
+            <li class="plan__li">Эффективная стилистика</li>
+            <li class="plan__li">Вирусная концепция</li>
+            <li class="plan__li">Дикторская база</li>
+            <li class="plan__li">Художники-визуализаторы</li>
+            <li class="plan__li">2D, мультипликация  </li>
+            <li class="plan__li">Звуковое оформление</li>
+            <li class="plan__li">Возможность продвижения</li>
+            <li class="plan__li"><p><strong>БЕСПЛАТНЫЕ ПРАВКИ</strong></p></li>
+          </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tarif" id="infographics">
+        <div class="headline">
+          <h4>ИНФОГРАФИКА</h4>
+        </div>
+        <div class="price">60 000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+            <li class="plan__li">60 секунд</li>
+            <li class="plan__li">Разработка сценария</li>
+            <li class="plan__li">Написание текста</li>
+            <li class="plan__li">Дикторское озвучание</li>
+            <li class="plan__li">Графический дизайн</li>
+            <li class="plan__li">Создание инфографики</li>
+            <li class="plan__li">Видеомонтаж</li>
+            <li class="plan__li">Звуковое оформление</li>
+            <li class="plan__li">Музыкальный фон</li>
+            <li class="plan__li"><p><b>БЕСПЛАТНЫЕ ПРАВКИ</b></p></li>
+          </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+      <div class="tarif" id="Pers-Anim">
+        <div class="headline">
+          <h4>ПЕРСОНАЖНАЯ АНИМАЦИЯ</h4>
+        </div>
+        <div class="price">80 000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+            <li class="plan__li">60 секунд</li>
+            <li class="plan__li">Создание персонажей</li>
+            <li class="plan__li">Разработка сценария</li>
+            <li class="plan__li">Написание текста</li>
+            <li class="plan__li">Дикторское озвучание</li>
+            <li class="plan__li">Графический дизайн</li>
+            <li class="plan__li">Видеомонтаж</li>
+            <li class="plan__li">Звуковое оформление</li>
+            <li class="plan__li">Использование персонажей</li>
+            <li class="plan__li">Музыкальный фон</li>
+            <li class="plan__li"><p><strong>БЕСПЛАТНЫЕ ПРАВКИ</strong></p></li>
+        </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+      <div class="tarif" id="Virs-Clip">
+        <div class="headline">
+          <h4>ВИРУСНЫЙ РОЛИК</h4>
+        </div>
+        <div class="price">ОТ 3 000</div>
+        <div class="headline">
+          <ul class="plan__text hidden-xs">
+            <li class="plan__li">1 секунда</li>
+            <li class="plan__li">Сценарная группа</li>
+            <li class="plan__li">Маркетинговый анализ</li>
+            <li class="plan__li">Дикторская база</li>
+            <li class="plan__li">Художники-визуализаторы</li>
+            <li class="plan__li">2D,3D, мультипликация  </li>
+            <li class="plan__li">Лицензия на звуки</li>
+            <li class="plan__li">Продвижение ролика </li>
+            <li class="plan__li">Сертификат ролика </li>
+            <li class="plan__li"><p><strong>БЕСПЛАТНЫЕ ПРАВКИ</strong></p></li>
+          </ul>
+        </div>
+        <div class="buy">
+          <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+	<h1 class="headline">Гарантия результата</h1>
+	<div class="row">
+		<div class="col-md-3 centr">
+			<img src="../../static/img/f-icon-6.svg" width="150px">
+		</div>
+		<div class="col-md-3 centr">
+			<img src="../../static/img/f-icon-7.svg" width="150px">
+		</div>
+		<div class="col-md-3 centr">
+			<img src="../../static/img/f-icon-8.svg" width="150px">
+		</div>
+		<div class="col-md-3 centr">
+			<img src="../../static/img/f-icon-9.svg" width="150px">
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+</body>
+</html>

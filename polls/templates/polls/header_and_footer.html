@@ -1,0 +1,166 @@
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../static/header_and_footer.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/visualization.css">
+	<link rel="stylesheet" type="text/css" href="../../static/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	{% block style %}
+
+	{% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script> -->
+
+		
+	<script src ="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> 
+
+
+</head>
+
+<header lang="ru">
+	<div class="logo" id="switch-logo-1">
+		<a href="/p/index">
+			<!-- <img src="../../static/img/logo.jpg" alt="logo" width="150px"> -->
+			<img src="../../static/img/logo-wirecollective-b.png" alt="logo" width="150px">
+		</a>
+	</div>
+
+	<div class="logo" id="switch-logo-2">
+		<a href="/p/index">
+			<!-- <img src="../../static/img/logo.jpg" alt="logo" width="150px"> -->
+			<img src="../../static/img/logo-wirecollective.png" alt="logo" width="150px">
+		</a>
+	</div>
+
+<!-- 	<input name="language" type="radio" id="russia">
+	<input name="language" type="radio" id="english"> -->
+
+<!-- ====================================================================================== -->
+
+	<div class="menu" id="switch-color">
+		<ul class='flex-menu'>
+<!-- 			<li><a href="#" onclick="order()"><h4 class="btn-menu">ЗАКАЗАТЬ</h4></a></li> -->
+			<li><a href="/p/video"><h4 class="btn-menu">РОЛИКИ</h4></a>
+				<ul class="drop-down">
+					<li><a href="">Инфографика</a></li>
+					<li><a href="">Видеопрезентация</a></li>
+					<li><a href="">Мультипликация</a></li>
+					<li><a href="">2D Ролики</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><h4 class="btn-menu">ДИЗАЙН</h4></a>
+				<ul class="drop-down">
+					<li><a href="">Брендинг</a></li>
+					<li><a href="">Фирменый стиль</a></li>
+					<li><a href="">Логотип</a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#"><h4 class="btn-menu">САЙТЫ</h4></a></li> -->
+			<li><a href="/p/plan_work"><h4 class="btn-menu">ХОД РАБОТЫ</h4></a></li>
+			<li><a href="#"><h4 class="btn-menu">О КОМПАНИИ</h4></a></li>
+			<li><a href="/p/vis"><h4 class="btn-menu">3D ВИЗУАЛИЗАЦИЯ</h4></a>
+				<ul class="drop-down">
+					<li><a href="/p/interior">Интерьеры</a></li>
+					<li><a href="/p/object_visualization">Предметная визуализация</a></li>
+					<li><a href="/p/exteriors">Экстерьеры</a></li>
+					<li><a href="/p/modeling">3D моделирование</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- <div id="form" class="hidden"> -->
+		<!-- <h2>ИНФОРМАЦИЯ ДЛЯ СВЯЗИ С ВАМИ</h2> -->
+	<!-- <button id="x" class="btn btn-danger submit">X</button>
+	<div class="cntr">
+	</div>
+</div> -->
+
+<div class="translucent-bg hidden" id="form">
+	<div class="center" id="insert-img">		
+		<form action="" method="POST">{% csrf_token %}
+			<div class="row">
+				<!-- <div class="col-sm-6"> -->
+				<div class="wrapper-form">
+					<p class="one-element">{{ form.username }}</p>
+					<p>{{ form.phone }}</p>
+					<p>{{ form.email }}</p>
+					<p>{{ form.extra_contacts }}</p>
+				</div>
+				<!-- </div> -->
+				<!-- <div class="col-sm-6"> -->
+				<div class="wrapper-form">
+					{{ form.coment }}
+				</div>
+				<!-- </div> -->
+			</div>
+			<button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+		</form>
+		<a href="#" class="close">X</a>
+	</div>
+</div>
+
+
+<footer>
+	<p>Студия «3D Labrotary», © 2019 г. Все права защищены.</p>
+
+
+
+<!-- 	<div class="logo-foot">
+		<div class="soc-network">
+			<a href="#"><img src="../../static/img/icon/behance.png" width="50px"></a>
+		</div>
+		<div class="soc-network">
+			<a href="#"><img src="../../static/img/icon/facebook.png" width="50px"></a>
+		</div>
+		<div class="soc-network">
+			<a href="#"><img src="../../static/img/icon/twitter.png" width="50px"></a>
+		</div>
+		<div class="soc-network">
+			<a href="#"><img src="../../static/img/icon/you-tube.png" width="50px"></a>
+		</div>
+	</div> -->
+
+
+<!-- =================================Bootstrap icon============================================================ -->
+
+	<div class="wrapper">
+	  <ul class="soc-network">
+	    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+	    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+	    <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+	    <li><i class="fa fa-reddit" aria-hidden="true"></i></li>
+	    <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+	  </ul>
+	</div>
+
+</footer>
+
+<script type="text/javascript">
+	function order() {
+		$("#form").removeClass("hidden");
+		$("#form").addClass("visible");
+	}
+
+	$('#x').click(function() {
+		$("#form").removeClass("visible");
+		$("#form").addClass("hidden");
+	})
+
+	
+
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+{% extends 'polls/header_and_footer.html'%}
+
+{% block style %}
+	<link rel="stylesheet" type="text/css" href="../../static/plan_work.css">
+{% endblock %}
+
+<body>
+
+{% block content %}
+	<h1>СХЕМА РАБОТЫ В 5 ШАГОВ</h1>
+
+	<div class="container">
+		<div class="element">
+			<img src="../../static/img/shag-1.jpg" alt="" width="250px">
+			<div class="shag">1 Шаг</div>
+			<h3>Ваша заявка</h3>
+			<div>Оцениваем ваше техническое задание</div>
+		</div>
+		<div class="element">
+			<img src="../../static/img/shag-2.jpg" alt="" width="250px">
+			<div class="shag">2 Шаг</div>
+			<h3>Старт работы</h3>
+			<div>Подписываем договор и составляем график работ</div>
+		</div>
+		<div class="element">
+			<img src="../../static/img/shag-3.jpg" alt="" width="250px">
+			<div class="shag">3 Шаг</div>
+			<h3>Первые эскизы</h3>
+			<div>Учитываем ваши комментарии и пожелания</div>
+		</div>
+		<div class="element">
+			<img src="../../static/img/shag-4.jpg" alt="" width="250px">
+			<div class="shag">4 Шаг</div>
+			<h3>Вторые эскизы</h3>
+			<div>Проверяем результат и согласовываем</div>
+		</div>
+		<div class="element">
+			<img src="../../static/img/shag-5.jpg" alt="" width="250px">
+			<div class="shag">5 Шаг</div>
+			<h3>Результат</h3>
+			<div>Передаем финальную версию материалов</div>
+		</div>
+	</div>
+{% endblock %}
+
+</body>
+</html>

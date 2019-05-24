@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+{% extends 'polls/header_and_footer.html' %}
+
+{% block style %}
+	
+	<link rel="stylesheet" type="text/css" href="../../static/index.css">
+
+{% endblock %}
+
+<body>
+
+{% block content %}
+
+<main>
+
+	<div class="fullscreen-bg">
+	    <div class="overlay">
+	        <h1>
+	        	<b>3D LABORATORY</b>-ЭТО АГЕНТСТВО, ГДЕ РАБОТАЮТ ТОЛЬКО ПРОФЕССИОНАЛЫ <br>
+				С ЛУЧШЕЙ ЭКСПЕРТИЗОЙ НА РЫНКЕ. МЫ РАЗРАБАТЫВАЕМ <br>
+				КОМПЛЕКСНЫЕ РЕШЕНИЯ: НЕЙМИНГ, ЛОГОТИП, ФИРМЕННЫЙ <br>
+				СТИЛЬ, САЙТЫ И КЛЮЧЕВЫЕ ВИЗУАЛЫ ДЛЯ <br>
+				РЕКЛАМНЫХ КАМПАНИЙ.
+			</h1>
+	    </div>
+	    <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
+	        <source src="../../static/MP4/Onfire.mp4" type="video/mp4">
+	    </video>
+	</div>
+	</main>
+
+	<div id="form" class="hidden">
+		<button id="x" class="btn btn-danger submit">X</button>
+		<div class="cntr">
+			<form action="" method="POST">{% csrf_token %}
+				<div class="row">
+					<!-- <div class="col-sm-6"> -->
+					<div class="wrapper-form">
+						<p class="one-element">{{ form.username }}</p>
+						<p>{{ form.phone }}</p>
+						<p>{{ form.email }}</p>
+						<p>{{ form.extra_contacts }}</p>
+					</div>
+					<!-- </div> -->
+					<!-- <div class="col-sm-6"> -->
+					<div class="wrapper-form">
+						{{ form.coment }}
+					</div>
+					<!-- </div> -->
+				</div>
+				<button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+		
+	
+	</script>
+{% endblock %}
+</body>
+</html>

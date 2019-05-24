@@ -1,0 +1,107 @@
+#infographics {
+	background-color: rgb(196,216,45);
+}
+
+
+#Pers-Anim {
+	background-color: rgb(235,143,61);
+}
+
+#Virs-Clip {
+	background-color: rgb(66,155,143);
+}
+
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.plan__li {
+	/*list-style-image: url(img/star.svg);*/
+	background-image: url(img/star.svg);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	padding-left: 30px;
+}
+
+.tarif {
+	max-width: 30%;
+	min-width: 350px;
+	margin: 10px;
+	border: 5px solid;
+	border-radius: 15px;
+}
+
+.buy {
+	height: 50px;
+	width: 100px;
+	margin: auto;
+	position: relative;
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.plan__text {
+	color: #fff;
+}
+
+.col-md-4 {
+	max-width: 30%;
+	margin: 5px;
+	border: 5px solid;
+	border-radius: 5px;
+}
+
+.price {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	font-size: 35px;
+	font-weight: 700;
+}
+/*
+ul {
+	background-color: initial;
+}
+*/
+
+.sentence {
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon {
+	width: 100px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+#icon-1 {
+	background-image: url(img/f-icon-1.svg);
+}
+
+#icon-2 {
+	background-image: url(img/f-icon-2.svg);
+}
+
+#icon-3 {
+	background-image: url(img/f-icon-3.svg);
+}
+
+#icon-4 {
+	background-image: url(img/f-icon-4.svg);
+}
+
+#icon-5 {
+	background-image: url(img/f-icon-5.svg);
+}
+
+/*#icon-2 {
+	background-image: url(img/f-icon-2.svg);
+}
+*/

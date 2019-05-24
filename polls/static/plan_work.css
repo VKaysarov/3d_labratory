@@ -1,0 +1,21 @@
+h1 {
+	width: 100%;
+	text-align: center;
+}
+.element {
+	max-width: 246px;
+	margin: 10px;
+}
+
+.shag {
+	background-image: url(img/shag.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px 0;
+	font-size: 11px;
+	font-weight: 500;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+	color: #fff;
+}
